@@ -6,12 +6,19 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        System.out.println("1.Калькулятор умеет выполнять операции сложения, вычитания, умножения и деления с двумя числами: a + b, a - b, a * b, a / b.");
+        System.out.println("2.Калькулятор умеет работать как с арабскими (1,2,3,4,5…), так и с римскими (I,II,III,IV,V…) числами.");
+        System.out.println("3.Калькулятор должен принимать на вход числа от 1 до 10 включительно, не более.");
+        System.out.println("4.Калькулятор умеет работать только с целыми числами.");
+        System.out.println("5юПри вводе пользователем неподходящих чисел или не соответствующей одной из вышеописанных арифметических операций,калькулятор выдаст ошибку");
+        System.out.println("Введите пожалуйста ваше арифметическое выражение:");
         String calc_line = sc.nextLine();
 
         String result = calc(calc_line);
         System.out.println(result);
 
     }
+
 
     public static char operand(String in) {
         char op = 'e';
