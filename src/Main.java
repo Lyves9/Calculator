@@ -13,12 +13,6 @@ public class Main {
 
     }
 
-//    private static void check_errors(int num1, int num2, char op) {
-//        Converter converter = new Converter();
-//        converter.romanKeyMap.get('I');
-//    }
-
-
     public static char operand(String in) {
         char op = 'e';
         int flag = 0;
